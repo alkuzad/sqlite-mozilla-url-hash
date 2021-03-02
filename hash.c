@@ -67,3 +67,8 @@ int sqlite3_sqlitemozillaurlhash_init(sqlite3 *db, char **pzErrMsg, const sqlite
     SQLITE_EXTENSION_INIT2(pApi);
     return sqlite3_create_function(db, "hash", 1, SQLITE_UTF8, 0, sqlite_hash, 0, 0);
 }
+
+// MinGW complains
+int main(void){
+    return 0;
+}
